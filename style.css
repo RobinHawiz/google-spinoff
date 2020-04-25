@@ -8,6 +8,12 @@ html {
   font-size: 62.5%;
 }
 
+ul {
+  list-style: none;
+  font-size: 1.3rem;
+  font-family: Arial, sans-serif;
+}
+
 /* NAVBAR SECTION*/
 
 .navbar {
@@ -15,11 +21,10 @@ html {
 }
 
 nav {
-  height: 10vh;
+  height: 5vh;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 1rem;
 }
 
 .hamburger {
@@ -43,9 +48,19 @@ nav {
 
 .profile-picture {
   padding-left: 1.5rem;
+  padding-right: 3rem;
 }
 
 .profile-picture img {
   width: 3rem;
   height: 3rem;
+}
+
+ul {
+  display: flex;
+  padding-right: 1.5rem;
+}
+
+.images-link-container {
+  padding-left: 1.5rem;
 }
