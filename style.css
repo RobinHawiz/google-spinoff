@@ -10,8 +10,11 @@ html {
 
 ul {
   list-style: none;
-  font-size: 1.3rem;
   font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* NAVBAR SECTION*/
@@ -21,18 +24,37 @@ ul {
 }
 
 nav {
-  height: 5vh;
+  min-height: 5vh;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  padding-top: 1rem;
+}
+
+nav ul {
+  display: flex;
+  padding-right: 1.9rem;
+  padding-bottom: 0.3rem;
+  font-size: 1.3rem;
+}
+
+nav ul a {
+  font-size: 1.3rem;
+  color: rgb(33, 33, 33);
+}
+
+nav ul a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
 }
 
 .hamburger {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 2.7rem;
-  width: 2.7rem;
+  height: 2rem;
+  width: 2rem;
+  margin-bottom: 0.2rem;
 }
 
 .hamburger .row {
@@ -41,26 +63,20 @@ nav {
 }
 
 .hamburger .line {
-  height: 0.5rem;
-  width: 0.5rem;
+  padding: 0.2rem;
   background: rgb(114, 114, 114);
 }
 
 .profile-picture {
-  padding-left: 1.5rem;
+  padding-left: 1.9rem;
   padding-right: 3rem;
 }
 
 .profile-picture img {
-  width: 3rem;
-  height: 3rem;
-}
-
-ul {
-  display: flex;
-  padding-right: 1.5rem;
+  width: 3.2rem;
+  height: 3.2rem;
 }
 
 .images-link-container {
-  padding-left: 1.5rem;
+  padding-left: 1.6rem;
 }
