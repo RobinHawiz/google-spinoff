@@ -81,6 +81,8 @@ nav ul a:hover {
   padding-left: 1.6rem;
 }
 
+/* GOOGLE FRONTPAGE SECTION */
+
 .google-frontpage {
   min-height: 95vh;
   display: flex;
@@ -101,18 +103,26 @@ form {
   display: flex;
   justify-content: center;
 }
-.search-bar {
+
+form .search-bar {
+  border: 0.15rem solid #eeeeee;
+  border-radius: 5rem;
   margin-top: 3rem;
   display: flex;
   align-items: center;
 }
 
 .search-bar input {
-  height: 3.5rem;
+  border: none;
+  outline: none;
+  height: 4.4rem;
   width: 50rem;
+  margin-bottom: 0.1rem;
+  margin-left: 4rem;
+  font-size: 1.6rem;
 }
 
-.magnifying-glass {
+form .magnifying-glass {
   height: 0;
 }
 
@@ -120,29 +130,37 @@ form {
   height: 2.4rem;
   width: 2.4rem;
 }
+.microphone-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4.4rem;
+  width: 4rem;
+  padding-right: 1rem;
+}
 
 .microphone-icon img {
   height: 2.4rem;
   width: 2.4rem;
 }
 
-.input-buttons {
+form .input-buttons {
   padding: 2rem;
 }
 
-label {
+form label {
   position: relative;
 }
 
 label:before {
   content: "";
   position: absolute;
-  left: -2rem;
-  top: 0;
-  transform: translateY(50%);
+  top: 50%;
+  left: 2%;
+  transform: translateY(-50%);
   width: 2rem;
   height: 2rem;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25' fill='rgb(154, 160, 166)' fill-rule='evenodd' %3E%3Cpath d='M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'%3E%3C/path%3E%3C/svg%3E")
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 25 25' fill='rgb(154, 160, 166)' fill-rule='evenodd' %3E%3Cpath d='M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'%3E%3C/path%3E%3C/svg%3E")
     center / contain no-repeat;
 }
 
