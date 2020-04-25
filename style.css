@@ -19,7 +19,7 @@ html {
 .hamburger {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   height: 10rem;
   width: 10rem;
   border: 0.3rem solid black;
@@ -27,11 +27,10 @@ html {
 
 .hamburger .row {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .hamburger .line {
-  margin: 0.5rem;
   padding: 0.5rem;
   background: black;
 }
