@@ -80,3 +80,22 @@ nav ul a:hover {
 .images-link-container {
   padding-left: 1.6rem;
 }
+
+.google-frontpage {
+  min-height: 95vh;
+}
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+svg {
+  height: 2rem;
+  width: 2rem;
+}
+
+.microphone-icon img {
+  height: 2.4rem;
+  width: 2.4rem;
+}
