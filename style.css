@@ -137,13 +137,13 @@ form .search-bar:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 4.4rem;
+  height: 4.5rem;
   width: 4rem;
   padding-right: 1.5rem;
 }
 
 .microphone-icon img {
-  height: 2.4rem;
+  height: 2.6rem;
   width: 2.4rem;
 }
 
