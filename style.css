@@ -57,14 +57,19 @@ nav ul a:hover {
   margin-bottom: 0.2rem;
 }
 
+.hamburger:hover .line {
+  background: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+}
+
 .hamburger .row {
   display: flex;
   justify-content: space-evenly;
 }
 
-.hamburger .line {
+.line {
   padding: 0.2rem;
-  background: rgb(114, 114, 114);
+  background: rgba(0, 0, 0, 0.55);
 }
 
 .profile-picture {
@@ -160,7 +165,6 @@ form .input-buttons {
   min-width: 5.4rem;
   text-align: center;
   cursor: pointer;
-  user-select: none;
 }
 
 .input-buttons input:hover {
