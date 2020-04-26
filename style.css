@@ -109,10 +109,6 @@ form {
   justify-content: center;
 }
 
-.search-bar {
-  width: 100%;
-}
-
 form .search-bar {
   border: 0.1rem solid #dfe1e5;
   border-radius: 5rem;
@@ -126,23 +122,30 @@ form .search-bar:hover {
   border-color: rgba(223, 225, 229, 0);
 }
 
+.search-bar {
+  height: 4.7rem;
+  width: 58.5rem;
+  position: relative;
+}
+
 .search-bar input {
+  position: absolute;
   border: none;
   outline: none;
-  height: 4.2rem;
+  left: 5.2rem;
+  transform: translateY(-55%);
   margin-top: 0.1rem;
   margin-bottom: 0.1rem;
-  margin-left: 4rem;
+  margin-right: 1rem;
   font-size: 1.6rem;
+  width: calc(100% - 6rem);
 }
 
 .microphone-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 4.5rem;
-  width: 4rem;
-  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .microphone-icon img {
@@ -179,14 +182,14 @@ form .input-buttons {
 
 form label {
   position: relative;
-  width: 90%;
+  width: 100%;
 }
 
 label:before {
   content: "";
   position: absolute;
   top: 50%;
-  left: 3%;
+  left: 1.5rem;
   transform: translateY(-50%);
   width: 2rem;
   height: 2rem;
@@ -282,7 +285,7 @@ footer {
 
 @media screen and (max-width: 719px) {
   .search-bar {
-    width: 70%;
+    width: 80%;
   }
   .left-display-links {
     justify-content: space-evenly;
@@ -295,9 +298,6 @@ footer {
 }
 
 @media screen and (max-width: 481px) {
-  .search-bar input {
-    width: 50%;
-  }
   .left-display-links {
     width: 50%;
   }
