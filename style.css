@@ -89,12 +89,13 @@ nav ul a:hover {
 
 .google-frontpage {
   min-height: 89vh;
-  display: flex;
-  justify-content: center;
 }
 
 .google-header {
   padding-top: 13rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 form {
@@ -106,6 +107,10 @@ form {
 .logo {
   display: flex;
   justify-content: center;
+}
+
+.search-bar {
+  width: 100%;
 }
 
 form .search-bar {
@@ -125,7 +130,6 @@ form .search-bar:hover {
   border: none;
   outline: none;
   height: 4.2rem;
-  width: 40rem;
   margin-top: 0.1rem;
   margin-bottom: 0.1rem;
   margin-left: 4rem;
@@ -138,7 +142,7 @@ form .search-bar:hover {
   align-items: center;
   height: 4.5rem;
   width: 4rem;
-  padding-right: 1.5rem;
+  padding-left: 1.5rem;
 }
 
 .microphone-icon img {
@@ -175,6 +179,7 @@ form .input-buttons {
 
 form label {
   position: relative;
+  width: 90%;
 }
 
 label:before {
@@ -276,6 +281,9 @@ footer {
 }
 
 @media screen and (max-width: 719px) {
+  .search-bar {
+    width: 70%;
+  }
   .left-display-links {
     justify-content: space-evenly;
     order: 2;
@@ -284,10 +292,25 @@ footer {
     justify-content: center;
     order: 1;
   }
+}
 
-  .left-content {
+@media screen and (max-width: 481px) {
+  .search-bar input {
+    width: 50%;
   }
+  .left-display-links {
+    width: 50%;
+  }
+}
 
+@media screen and (max-width: 339px) {
+  .left-content {
+    font-size: 1.2rem;
+  }
   .right-content {
+    font-size: 1.2rem;
+  }
+  .display-language {
+    font-size: 1.2rem;
   }
 }
